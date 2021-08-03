@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form_list" action="#">
+            <h2>Заполни форму</h2>
+            <label for="form_lastname">Фамилия:</label>
+            <input class="form_input" type="text" id="form_lastname" placeholder="Фамилия" required>
+            <label for="form_name">Имя:</label>
+            <input class="form_input" type="text" id="form_name" placeholder="Имя" required>
+            <label for="form_oth">Имя:</label>
+            <input class="form_input" type="text" id="form_oth" placeholder="Отчество" required>
+            <label for="form_born">Год рождения:</label>
+            <input class="form_input" type="number" id="form_born" placeholder="2000" required>
+            <label for="form_group">Класс:</label>
+            <input class="form_input" type="number" id="form_group" required>
+            <input type="button" class="form_submit" value="Добавить">
+            <input type="reset" class="form_reset" value="Сбросить">
+        </form>
+        <div class="list">
+            <h3>Список студентов</h3>
+            <div>
+                <span>Сортировать по Фамилии:</span>
+                <span class="sort_asc_ln"></span>
+                <span class="sort_desc_ln"></span>
+                <span>по Дате рождения:</span>
+                <span class="sort_asc_year"></span>
+                <span class="sort_desc_year"></span>
+                <button class="table_download">Выгрузить список</button>
+            </div>
+            <table class="list_table">
+                <thead>
+                    <tr class="list_table_h">
+                        <th >Фамилия</th>
+                        <th >Имя</th>
+                        <th >Имя</th>
+                        <th >Год рождения</th>
+                        <th >Класс</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+                
+
+                <!--Шаблон-->
+             <!-- <tr class="new_student">
+                    <td>a</td>
+                    <td>a</td>
+                    <td>a</td>
+                    <td>2000</td>
+                    <td>5</td>
+                    <td class="delete_student" >&times</td>
+                </tr>-->
+                
+            </table>
+
+        </div>
+
+    </div>    
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
